@@ -12,4 +12,8 @@ def name
   @Name
 end
 
+def deposit(num)
+@balance + num
+end
+
 end
