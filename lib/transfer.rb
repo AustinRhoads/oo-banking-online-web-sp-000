@@ -13,7 +13,7 @@ def valid?
 end
 
 def execute_transaction
-if !!(@amount <= @sender.balance && self.valid? ) == true
+if !!(@amount <= @sender.balance && self.valid? && self.status != "complete" ) == true
   @sender.balance -= @amount
   @receiver.balance += @amount
   self.status = "complete"
