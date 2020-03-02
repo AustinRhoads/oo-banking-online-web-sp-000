@@ -13,7 +13,10 @@ def valid?
 end
 
 def execute_transaction
-
+if !!(@amount <= @sender.balance && self.valid? ) == true
+  @sender.balance -= @amount
+  @receiver.balance += @amount
+end
 end
 
 def reverse_transfer
