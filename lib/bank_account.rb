@@ -6,8 +6,8 @@ def initialize(name)
 @Name = name
 end
 
-def name 
-  @Name 
+def name
+  @Name
 end
 
 end
