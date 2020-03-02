@@ -21,7 +21,7 @@ def display_balance
 end
 
 def valid?
-
+!!self.status == "open" && @balance > 0
 end
 
 end
