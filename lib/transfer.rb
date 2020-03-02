@@ -18,7 +18,8 @@ if !!(@amount <= @sender.balance && self.valid? ) == true
   @receiver.balance += @amount
   self.status = "complete"
 else
-  self.status = "Transaction rejected. Please check your account balance."
+  self.status = "rejected"
+   "Transaction rejected. Please check your account balance."
 end
 end
 
