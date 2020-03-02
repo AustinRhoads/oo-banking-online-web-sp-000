@@ -1,6 +1,6 @@
 class BankAccount
 
-attr_accessor
+attr_accessor :balance
 
 def initialize(name)
 @Name = name
